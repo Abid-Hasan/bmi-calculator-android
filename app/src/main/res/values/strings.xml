@@ -8,5 +8,4 @@
     <string name="inches">Inches</string>
     <string name="weight_kg">Weight (kg)</string>
     <string name="calculate">CALCULATE</string>
-    <string name="text_view_result_placeholder">23.6 - You are a healthy weight!</string>
 </resources>
