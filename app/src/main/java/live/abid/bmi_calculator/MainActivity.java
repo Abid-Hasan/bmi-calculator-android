@@ -44,15 +44,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupButtonClickListener() {
-        buttonCalculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    double bmi = calculateBmi();
-                    showResult(bmi);
-                } catch (Exception e) {
-                    Toast.makeText(MainActivity.this, "Please enter all the fields with valid values", Toast.LENGTH_LONG).show();
-                }
+        buttonCalculate.setOnClickListener(view -> {
+            try {
+                double bmi = calculateBmi();
+                showResult(bmi);
+            } catch (Exception e) {
+                Toast.makeText(MainActivity.this, "Please enter all the fields with valid values", Toast.LENGTH_LONG).show();
             }
         });
     }
